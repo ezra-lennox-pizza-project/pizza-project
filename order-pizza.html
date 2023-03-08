@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
+<!-------------------------NAV BAR TOP-------------------------->
     <nav>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -15,9 +16,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<!--                        extra button unused-->
 <!--                        <li class="nav-item">-->
 <!--                            <a class="nav-link active" aria-current="page" href="#">Home</a>-->
 <!--                        </li>-->
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Order Online</a>
                         </li>
@@ -26,15 +30,16 @@
                                 Menu
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Kicking Ass</a></li>
-                                <li><a class="dropdown-item" href="#">TBD</a></li>
+                                <li><a class="dropdown-item" href="#">Join the "We eating pizza Club"</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Third Thing here</a></li>
+                                <li><a class="dropdown-item" href="#">Secret Menu</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Third Thing Here</a></li>
                             </ul>
                         </li>
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2 " type="search" placeholder="Zip Code" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        <form class="d-flex text-nowrap" role="search">
+                            <input class="form-control me-2 " type="search" placeholder="Delivery Zipcode" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search stores near you!</button>
                         </form>
                     </ul>
                         <div class="d-flex justify-content-end nav-item">
@@ -47,14 +52,16 @@
             </div>
         </nav>
     </nav>
+
+<!---------------------- HEADER IMAGE ------------------>
     <header class="container d-flex flex-column justify-content-center text-center p-0" style="background-image: url('img/pizza-background.png'); min-height: 346px; background-size: cover; background-position: center center">
         <h1 class="text-bg-light opacity-75">Welcome to Pizza World!</h1>
     </header>
     <div class="container pt-5">
         <h2>Build your own pizza!</h2>
-
     </div>
-<!-- selection cheese crust container-->
+
+<!-----------------MAIN SELECTION CONTAINER---------->
     <div class="container mb-4">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -73,61 +80,46 @@
                 </svg> Toppings</a>
             </li>
         </ul>
+
+<!-------------------FIRST CARD ---------------------------->
         <div class="card p-0">
             <div class="card-header bg-primary text-light">
                 Choose Size and Crust
             </div>
             <div class="card-body p-0">
 
-            <div class="card">
-                <div class="card-header">
-                    Hand Tossed
-                </div>
+            <div class="card m-3">
+                <div class="card-header">Hand Tossed</div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Garlic and something or another</li>
-                    <li class="list-group-item"><input type="radio" name="handsize" value="small" id="small">
+                    <li class="list-group-item">Garlic thing that's long</li>
+                    <li class="list-group-item">
+                        <input type="radio" name="handsize" value="small" id="small" />
                         <label for="small">Small (10")</label>
                     </li>
                     <li class="list-group-item"><input type="radio" name="handsize" value="medium" id="medium">
-                        <label for="medium">Medium (12")</label>/li>
+                        <label for="medium">Medium (12")</label></li>
                 </ul>
             </div>
-
-<!--            <div class="card m-3" style="width: 18rem;">-->
-<!--                <div class="card-header">-->
-<!--                    Hand Tossed-->
-<!--                </div>-->
-<!--                <ul class="card-body">-->
-<!--                    <h5 class="card-title">Garlic and something or another</h5>-->
-<!--                    <div class="input-wrapper">-->
-<!--                        <input type="radio" name="handsize" value="small" id="small">-->
-<!--                        <label for="small">Small (10")</label>-->
-<!--                    </div>-->
-<!--                    <div class="input-wrapper">-->
-<!--                        <input type="radio" name="handsize" value="medium" id="medium">-->
-<!--                        <label for="medium">Medium (12")</label>-->
-<!--                    </div>-->
-<!--                </ul>-->
-            </div>
-            <div class="card m-3">
-                <div class="card-header">
-                    Crispy Thin
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Thin enough to be thin</h5>
-                    <div class="input-wrapper">
-                        <input type="radio" name="thinsize" value="medium" id="medium">
-                        <label for="medium">Medium (12")</label>
-                    </div>
-                        <div class="input-wrapper">
-                            <input type="radio" name="thinsize" value="large" id="large">
-                            <label for="large">Large (14")</label>
-                    </div>
-                </div>
         </div>
-            <div class="card-footer text-muted d-flex justify-content-end">
-                <a href="#" class="btn btn-primary">Next Step ></a>
-            </div>
+
+<!-----------SECOND CARD--------------->
+        <div class="card m-3">
+            <div class="card-header">Crispy Thin</div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Thin enough for optimum crispy to crunchy ratio.</li>
+                <li class="list-group-item">
+                    <input type="radio" name="handsize" value="small" id="small" />
+                    <label for="small">Medium (12")</label>
+                </li>
+                <li class="list-group-item"><input type="radio" name="handsize" value="medium" id="medium">
+                    <label for="medium">Large (14")</label></li>
+            </ul>
+        </div>
+<!-------------CARD FOOTER -------------->
+        <div class="card-footer text-muted d-flex justify-content-end">
+            <a href="#" class="btn btn-primary">Next Step ></a>
+        </div>
+        </div>
     </div>
 
 
